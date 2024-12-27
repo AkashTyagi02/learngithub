@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meme Page Generator</title>
+  </head>
+  <style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-family: Arial, sans-serif;
+    background-color: rgb(179, 179, 219);
+    color: rgb(75, 199, 146);
+}
+canvas {
+    border: 2px solid #9edcf2;
+    margin-top: 10px;
+}
+.controls {
+    margin-top: 10px;
+}
+.controls input, .controls button {
+    margin: 10px;
+}
+#generate{
+    background-color: rgb(196, 12, 27);
+    color:whitesmoke;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+#download {
+    background-color:greenyellow;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    
+}
+  </style>
+  
+<body>
+  
+  <h1 style="background-color: cyan;" >Meme Page Generator</h1>
+  <input type="file" id="imageInput" accept="image">
+  <div class="controls">
+    <input type="text" id="topText" placeholder="Enter Top Text">
+    <input type="text" id="bottomText"  placeholder="Enter Bottom Text">
+    <button id="generate" onclick="generateMeme()">Generate Meme</button><br>
+    <button id="download" onclick="downloadMeme()">Download Meme</button>
+  </div> 
+ 
+  <canvas id="memeCanvas" width="580" height="450" ></canvas>
+  
+  
+</body>
+</html>
