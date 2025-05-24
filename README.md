@@ -1,10 +1,11 @@
 <html>
-  <head> this is the first page </head><br></br>
- 
-  <title> let's do it </title>
-<body>  
-learning github
-this is akash tyagi here 
-your coder and developer
-</body>
+  <head>
+    <title>Let's do it</title>
+  </head>
+  <body>
+    <h1>This is the first page</h1>
+    <p>Learning GitHub</p>
+    <p>This is Akash Tyagi here</p>
+    <p>Your coder and developer</p>
+  </body>
 </html>
